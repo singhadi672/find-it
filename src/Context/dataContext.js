@@ -39,6 +39,8 @@ export default function DataProvider({ children }) {
         //   },
         // });
 
+        console.log(DATA_URL);
+
         const data = await axios.get(DATA_URL, {
           headers: {
             "x-rapidapi-host": DATA_HOSTNAME,
