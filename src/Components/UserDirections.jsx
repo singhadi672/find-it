@@ -39,7 +39,7 @@ export default function UserDirections() {
             onClick={() => sliderhandler("left")}
           />
           <div className="user-direction__image">
-            <img src={images[currentIndex].image} alt="" />
+            <img src={`%PUBLIC_URL%\\${images[currentIndex].image}`} alt="" />
             <h4>{images[currentIndex].description}</h4>
           </div>
           <FontAwesomeIcon

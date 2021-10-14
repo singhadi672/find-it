@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      {/* {toggleDirections && <UserDirections />} */}
+      {toggleDirections && <UserDirections />}
       {loader ? (
         <Loader />
       ) : (
