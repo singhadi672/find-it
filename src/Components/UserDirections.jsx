@@ -12,18 +12,18 @@ import { images } from "../Util";
 
 export default function UserDirections() {
   // current index for the information
-  const [slide, setSlide] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const { setToggleDirections } = useData();
 
   // function to change slide of user directions
   function sliderhandler(type) {
     if (type === "left") {
-      if (slide >= 1) {
-        setSlide((prev) => prev - 1);
+      if (currentIndex >= 1) {
+        setCurrentIndex((prev) => prev - 1);
       }
     } else {
-      if (slide < images.length - 1) {
-        setSlide((prev) => prev + 1);
+      if (currentIndex < images.length - 1) {
+        setCurrentIndex((prev) => prev + 1);
       }
     }
   }
@@ -39,11 +39,8 @@ export default function UserDirections() {
             onClick={() => sliderhandler("left")}
           />
           <div className="user-direction__image">
-            <img
-              src="https://rukminim1.flixcart.com/flap/844/140/image/6d467cb751b1729f.jpg?q=50"
-              alt=""
-            />
-            <h4>gg</h4>
+            <img src={images[currentIndex].image} alt="" />
+            <h4>{images[currentIndex].description}</h4>
           </div>
           <FontAwesomeIcon
             icon={faAngleRight}
