@@ -28,8 +28,9 @@ export default function DataProvider({ children }) {
   // toggle the loader
   useEffect(() => {
     (async function () {
+      console.log("here");
       try {
-        const { data } = await axios.request({
+        const data = await axios.request({
           method: "GET",
           url: DATA_URL,
           headers: {
@@ -38,7 +39,7 @@ export default function DataProvider({ children }) {
           },
         });
 
-        console.log({ data });
+        console.log({ data }, "sdsdsds");
 
         const columns = Object.keys(data[0])
           .map((item) =>
