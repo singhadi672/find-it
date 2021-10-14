@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Navbar from "./Components/Navbar.jsx";
+import Table from "./Components/Table";
+import ConditionalFormatter from "./Components/ConditionalFormat";
+import UserDirections from "./Components/UserDirections";
+import { useData } from "./Context/dataContext";
+import Loader from "./Components/Loader";
 
 function App() {
+  const { toggleDirections, loader } = useData();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      {toggleDirections && <UserDirections />}
+      {loader ? (
+        <Loader />
+      ) : (
+        <div className="content">
+          <Table />
+          <ConditionalFormatter />
+        </div>
+      )}
     </div>
   );
 }
