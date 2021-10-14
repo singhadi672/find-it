@@ -38,6 +38,8 @@ export default function DataProvider({ children }) {
           },
         });
 
+        console.log({ data });
+
         const columns = Object.keys(data[0])
           .map((item) =>
             columnsData.includes(item)
