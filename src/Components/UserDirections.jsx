@@ -9,10 +9,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react/cjs/react.development";
 import { useData } from "../Context/dataContext";
 import { images } from "../Util";
-import format_image from "../images/format_image.PNG";
-import add_value from "../images/add_value.PNG";
-import add_relation from "../images/add_relation.PNG";
-import format_color_and_submit from "../images/format_color_and_submit.PNG";
 
 export default function UserDirections() {
   // current index for the information
@@ -47,7 +43,7 @@ export default function UserDirections() {
               src="https://rukminim1.flixcart.com/flap/844/140/image/6d467cb751b1729f.jpg?q=50"
               alt=""
             />
-            <h4>{images[currentIndex].description}</h4>
+            <h4>gg</h4>
           </div>
           <FontAwesomeIcon
             icon={faAngleRight}
