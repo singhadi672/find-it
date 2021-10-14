@@ -30,25 +30,14 @@ export default function DataProvider({ children }) {
     (async function () {
       console.log("here");
       try {
-        // const data = await axios.request({
-        //   method: "GET",
-        //   url: DATA_URL,
-        //   headers: {
-        //     "x-rapidapi-host": DATA_HOSTNAME,
-        //     "x-rapidapi-key": API_KEY,
-        //   },
-        // });
-
-        console.log(DATA_URL);
-
-        const data = await axios.get(DATA_URL, {
+        const { data } = await axios.request({
+          method: "GET",
+          url: DATA_URL,
           headers: {
             "x-rapidapi-host": DATA_HOSTNAME,
             "x-rapidapi-key": API_KEY,
           },
         });
-
-        console.log({ data }, "sdsdsds");
 
         const columns = Object.keys(data[0])
           .map((item) =>
