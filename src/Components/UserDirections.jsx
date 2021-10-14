@@ -9,6 +9,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react/cjs/react.development";
 import { useData } from "../Context/dataContext";
 import { images } from "../Util";
+import format_image from "../images/format_image.PNG";
+import add_value from "../images/add_value.PNG";
+import add_relation from "../images/add_relation.PNG";
+import format_color_and_submit from "../images/format_color_and_submit.PNG";
 
 export default function UserDirections() {
   // current index for the information
@@ -39,7 +43,7 @@ export default function UserDirections() {
             onClick={() => sliderhandler("left")}
           />
           <div className="user-direction__image">
-            <img src={`%PUBLIC_URL%\\${images[currentIndex].image}`} alt="" />
+            <img src={format_image} alt="" />
             <h4>{images[currentIndex].description}</h4>
           </div>
           <FontAwesomeIcon
