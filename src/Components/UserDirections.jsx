@@ -43,7 +43,10 @@ export default function UserDirections() {
             onClick={() => sliderhandler("left")}
           />
           <div className="user-direction__image">
-            <img src={format_image} alt="" />
+            <img
+              src="https://rukminim1.flixcart.com/flap/844/140/image/6d467cb751b1729f.jpg?q=50"
+              alt=""
+            />
             <h4>{images[currentIndex].description}</h4>
           </div>
           <FontAwesomeIcon
