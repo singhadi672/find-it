@@ -53,7 +53,7 @@ export default function DataProvider({ children }) {
         console.log(e);
       }
     })();
-  }, [table]);
+  }, []);
 
   // funtion to change the color of the cells based on the query parameters created
 
