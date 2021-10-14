@@ -2,7 +2,7 @@
 
 A conditional formatter to classify data in table based on formatting rules
 
-Live URL: 
+Live URL:
 
 ## Tech stack Used
 
@@ -13,7 +13,7 @@ Live URL:
 
 ## Video Walkthrough
 
-[https://www.loom.com/share/b08b60efc3a84e1dbe58ae6543214d06]
+https://www.loom.com/share/b08b60efc3a84e1dbe58ae6543214d06
 
 ### Directions Of Use
 
