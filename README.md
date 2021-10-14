@@ -2,7 +2,7 @@
 
 A conditional formatter to classify data in table based on formatting rules
 
-Live URL:
+Live URL: https://olvy-findr.netlify.app/
 
 ## Tech stack Used
 
