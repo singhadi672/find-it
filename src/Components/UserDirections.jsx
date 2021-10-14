@@ -16,17 +16,17 @@ export default function UserDirections() {
   const { setToggleDirections } = useData();
 
   // function to change slide of user directions
-  function sliderhandler(type) {
-    if (type === "left") {
-      if (currentIndex >= 1) {
-        setCurrentIndex((prev) => prev - 1);
-      }
-    } else {
-      if (currentIndex < images.length - 1) {
-        setCurrentIndex((prev) => prev + 1);
-      }
-    }
-  }
+  // function sliderhandler(type) {
+  //   if (type === "left") {
+  //     if (slide >= 1) {
+  //       setSlide((prev) => prev - 1);
+  //     }
+  //   } else {
+  //     if (slide < images.length - 1) {
+  //       setSlide((prev) => prev + 1);
+  //     }
+  //   }
+  // }
   return (
     <div className="directions">
       <div className="user-direction">
@@ -36,7 +36,7 @@ export default function UserDirections() {
             icon={faAngleLeft}
             size="2x"
             className="scroll"
-            onClick={() => sliderhandler("left")}
+            // onClick={() => sliderhandler("left")}
           />
           <div className="user-direction__image">
             <img
@@ -49,7 +49,7 @@ export default function UserDirections() {
             icon={faAngleRight}
             size="2x"
             className="scroll"
-            onClick={() => sliderhandler("right")}
+            // onClick={() => sliderhandler("right")}
           />
         </section>
       </div>
@@ -57,7 +57,7 @@ export default function UserDirections() {
         <FontAwesomeIcon
           icon={faTimes}
           size="3x"
-          onClick={() => setToggleDirections(false)}
+          // onClick={() => setToggleDirections(false)}
         />
       </button>
     </div>
