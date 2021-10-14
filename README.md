@@ -13,7 +13,7 @@ Live URL:
 
 ## Video Walkthrough
 
-[https://www.loom.com/share/b08b60efc3a84e1dbe58ae6543214d06]
+https://user-images.githubusercontent.com/70839024/137361752-549c24dd-bdc6-442d-bdb2-a8ce52c3e613.mp4
 
 ### Directions Of Use
 
