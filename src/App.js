@@ -11,6 +11,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      {toggleDirections && <UserDirections />}
       {loader ? (
         <Loader />
       ) : (
@@ -19,7 +20,6 @@ function App() {
           <ConditionalFormatter />
         </div>
       )}
-      {toggleDirections && <UserDirections />}
     </div>
   );
 }

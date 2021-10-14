@@ -12,7 +12,7 @@ import { images } from "../Util";
 
 export default function UserDirections() {
   // current index for the information
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [slide, setSlide] = useState(0);
   const { setToggleDirections } = useData();
 
   // function to change slide of user directions
