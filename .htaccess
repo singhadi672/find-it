@@ -11,6 +11,6 @@ Options -MultiViews
     RewriteRule ^ /index.html [QSA,L]
 
     #Redirect with params
-    RewriteCond %{REQUEST_URI}  ^\.herokuapp\.com$ 
+    RewriteCond %{REQUEST_URI}  ^/\.herokuapp\.com$ 
     RewriteCond %{QUERY_STRING} ^referralID=([0-9]*) 
-    RewriteRule ^(.*)$ https://new_domain.com/querypage/%1 [R=301,L]
+    RewriteRule ^(.*)$ https://new_domain.herokuapp.com/%1 [R=301,L]
